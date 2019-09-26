@@ -2,13 +2,14 @@ language: cpp
 sudo: required
 dist: trusty
 compiler:
-- gcc
+- clang
 os:
-- linux
+- osx
+osx_image: xcode8
 ruby: 2.2.0
 before_install:
-- sudo chmod +x config.sh
-- sudo ./config.sh
+- sudo chmod +x config.macos.sh
+- sudo ./config.macos.sh
 script:
-- sudo chmod +x build.sh
-- sudo ./build.sh
+- sudo chmod +x build.macos.sh
+- sudo ./build.macos.sh
