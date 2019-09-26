@@ -1,0 +1,7 @@
+language:cpp
+    install:
+    - chmod +x config.sh
+    - ./config.sh
+    script:
+    - chmod +x build.sh
+    - ./build.sh
