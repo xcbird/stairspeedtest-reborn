@@ -1,4 +1,9 @@
 language:cpp
+dist: xenial
+os:
+- linux
+compiler:
+- gcc
 install:
 - chmod +x config.sh
 - ./config.sh
