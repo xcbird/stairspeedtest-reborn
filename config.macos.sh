@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 #initialize sudo so that no password entering during installation
-sudo -v
+#sudo -v
 
 echo installing brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
