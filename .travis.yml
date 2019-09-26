@@ -4,7 +4,7 @@ os:
 - linux
 compiler:
 - gcc
-install:
+before_install:
 - chmod +x config.sh
 - ./config.sh
 script:
