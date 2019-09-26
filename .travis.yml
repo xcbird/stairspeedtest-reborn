@@ -8,8 +8,8 @@ os:
 osx_image: xcode8
 ruby: 2.2.0
 before_install:
-- sudo chmod +x config.macos.sh
-- sudo ./config.macos.sh
+- chmod +x config.macos.sh
+- ./config.macos.sh
 script:
-- sudo chmod +x build.macos.sh
-- sudo ./build.macos.sh
+- chmod +x build.macos.sh
+- ./build.macos.sh
