@@ -7,8 +7,8 @@ os:
 - linux
 ruby: 2.2.0
 before_install:
-- chmod +x config.sh
-- ./config.sh
+- sudo chmod +x config.sh
+- sudo ./config.sh
 script:
-- chmod +x build.sh
-- ./build.sh
+- sudo chmod +x build.sh
+- sudo ./build.sh
