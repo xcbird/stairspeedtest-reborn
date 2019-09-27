@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
 #initialize sudo so that no password entering during installation
-sudo -v
+#sudo -v
 
 echo installing brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 #install most libraries and client through brew
-brew install cmake git wget openssl@1.1 libpng yaml-cpp freetype rapidjson shadowsocks-libev
+brew install wget libpng yaml-cpp freetype rapidjson shadowsocks-libev
 
 echo downloading and compiling pngwriter
 git clone https://github.com/pngwriter/pngwriter

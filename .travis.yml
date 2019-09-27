@@ -8,8 +8,8 @@ os:
 osx_image: xcode10.3
 ruby: 2.2.0
 before_install:
-- chmod +x config.macos.sh
-- ./config.macos.sh
+- chmod +x config.macos.ci.sh
+- ./config.macos.ci.sh
 script:
 - chmod +x build.macos.sh
 - ./build.macos.sh
