@@ -1,6 +1,5 @@
 language: cpp
 sudo: required
-
 matrix:
     include:
     - os: osx
@@ -17,7 +16,7 @@ matrix:
       dist: bionic
       before_install:
       - chmod +x config.sh
-      - ./config.sh
+      - sudo ./config.sh
       script:
       - chmod +x build.sh
       - ./build.sh
